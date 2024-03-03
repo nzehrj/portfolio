@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fizzTech/about</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        #about-me {
+            width: 100%;
+            padding: 29px 0;
+            background: #E6DADA;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .sec-hed {
+            width: 88%;
+            margin: 10px auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .about-me {
+            width: 88%;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .about-me1 {
+            width: 50%;
+        }
+
+        .about-me1 img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+        }
+
+        .about-me2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-me2-a {
+            padding: 12px;
+            border-radius: 12px;
+            background: linear-gradient(rgba(243, 237, 237, 0.5), rgba(238, 232, 232, 0.5));;
+        }
+
+        .about-me2 h2 {
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .about-me2 p {
+            line-height: 27px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 920px) {
+            .about-me {
+                flex-direction: column;
+            }
+
+            .about-me1, .about-me2 {
+                width: 100%;
+            }
+        }
+
+        /* section for service */
+
+        #service-ip {
+            width: 100%;
+            padding: 30px 0;
+            background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+            background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        }
+
+        .service-ip {
+            display: flex;
+            gap: 30px;
+            width: 88%;
+            margin: 20px auto;
+        }
+
+        .service-ip1 {
+            width: 50%;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: -3px 1px 15px 0px rgba(17, 17, 26, 0.18);
+        }
+
+        .service-ip1 h2 {
+            letter-spacing: 1px;
+            font-weight: 700;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .service-ip1 p {
+            line-height: 27px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .service-ip1 button {
+            padding: 10px 25px;
+            font-weight: bold;
+            font-size: 1em;
+            background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+            padding: 15px 45px;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+        }
+
+        .service-ip1 button:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+         
+
+        .service-ip2 {
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 36px;
+            padding-top: 24px;
+        }
+
+        .div-code {
+            width: 70%;
+        }
+
+        .div-code img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+        }
+
+        @media (max-width: 920px) {
+            .service-ip {
+                flex-direction: column;
+            }
+
+            .service-ip1, .service-ip2 {
+                width: 100%;
+            }
+
+            .div-code {
+                width: 60%;
+            }
+
+            .service-ip1 p {
+                margin-bottom: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box-container">
+        <nav id="navbar" class="">   
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span><a href="index.html"><img width="100px" height="auto" src="image/fizztech-logos_transparent.png" class="fizz-logo"></a></span>
+                </div>
+            
+                <ul id="menu">
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="portfolio.html">Portfolio</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+          
+          
+        <!-- Menu Icon -->
+        <div class="menuIcon">
+            <span class="icon icon-bars"></span>
+            <span class="icon icon-bars overlay"></span>
+        </div>
+        
+        
+        <div class="overlay-menu">
+            <ul id="menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    
+        <section id="about-me">
+            <div class="sec-hed">
+                <h1>About Me</h1>
+            </div>
+            <div class="about-me">
+                <div class="about-me1">
+                    <img src="image/IMG_1846.png">
+                </div>
+                <div class="about-me2">
+                    <div class="about-me2-a">
+                        <h2>Creating Exceptional Web Experiences To Help You Thrive</h2>
+                        <p>I am Nzeh Rejoice, a front-end web developer with one year of experience. I am passionate about creating stunning and functional websites that provide an exceptional user experience. I have developed a range of websites, including an eCommerce website for a car dealership. With my expertise in front-end development, UI/UX design, and responsive design, I can help you take your online presence to the next level.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service-ip">
+            <div class="service-ip">
+                <div class="service-ip1">
+                    <h2>My Services</h2>
+                    <p>As a front-end web developer, i specialize in front-end development, UI/UX design and responsive design. By leveraging these skills, i can help you create a website that is not only visually appealing but also user-friendly, accessible and optimized for search engines.</p>
+                    <button>Download Cv</button>
+                </div>
+                <div class="service-ip2">
+                    <div class="div-code"><img src="image/html-5.png"></div>
+                    <div class="div-code"><img src="image/css.png"></div>
+                    <div class="div-code"><img src="image/js.png"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+   <script src="index.js"></script> 
+</body>
+</html>
